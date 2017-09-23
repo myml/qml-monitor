@@ -9,5 +9,7 @@
         <file>Net.qml</file>
         <file>Disk.qml</file>
         <file>Power.qml</file>
+        <file>R.qml</file>
+        <file>S.qml</file>
     </qresource>
 </RCC>
