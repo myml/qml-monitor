@@ -1,12 +1,15 @@
 import QtQuick 2.5
 import QtQuick.Controls 1.4
 import QtQml.Models 2.3
+import QtQuick.Window 2.3
 
 ApplicationWindow {
 		id: root
-		visible: true
+        visible: true
 		width: 280
 		height: 40
+        x: Screen.width-width
+        y: Screen.height-height
 		flags: Qt.Tool | Qt.FramelessWindowHint | Qt.WindowStaysOnTopHint
 //		flags: Qt.WindowStaysOnTopHint
 		color: "transparent"
