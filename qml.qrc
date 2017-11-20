@@ -1,14 +1,6 @@
 <RCC>
     <qresource prefix="/">
         <file>main.qml</file>
-        <file>Cpu.qml</file>
-        <file>Ram.qml</file>
-        <file>Ratio.qml</file>
-        <file>Load.qml</file>
-        <file>Speed.qml</file>
-        <file>Net.qml</file>
-        <file>Disk.qml</file>
-        <file>Power.qml</file>
         <file>R.qml</file>
         <file>S.qml</file>
     </qresource>
