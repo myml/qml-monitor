@@ -15,3 +15,6 @@ QML_IMPORT_PATH =
 
 DISTFILES += \
     REMODE.md
+
+HEADERS += \
+    system.h
