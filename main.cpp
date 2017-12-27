@@ -9,6 +9,7 @@ int main(int argc, char *argv[])
 
     QQmlApplicationEngine engine;
     auto exec=new Exec();
+
     engine.rootContext()->setContextProperty("exec",exec);
     engine.load(QUrl(QStringLiteral("qrc:/main.qml")));
 
