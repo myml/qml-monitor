@@ -3,5 +3,6 @@
         <file>main.qml</file>
         <file>R.qml</file>
         <file>S.qml</file>
+        <file>main.js</file>
     </qresource>
 </RCC>
