@@ -38,6 +38,10 @@ Thumbs.db
 # qtcreator generated files
 *.pro.user*
 
+# Qt6 build artifacts
+qml-monitor
+moc_predefs.h
+
 # xemacs temporary files
 *.flc
 

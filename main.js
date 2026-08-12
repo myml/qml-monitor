@@ -1,17 +1,5 @@
 // .pragma library
 
-function main(resources = Object.keys(AvailableResource)) {
-  const result = resources.map(key => {
-    return {
-      type: AvailableResource[key].type,
-      name: AvailableResource[key].name,
-      limit: AvailableResource[key].limit,
-      value: AvailableResource[key].getValue(),
-    };
-  });
-  return result;
-}
-
 const AvailableResource = {
   cpu: {
     type: 'R',
@@ -138,6 +126,18 @@ const AvailableResource = {
     },
   },
 };
+
+function main(resources = Object.keys(AvailableResource)) {
+  const result = resources.map(key => {
+    return {
+      type: AvailableResource[key].type,
+      name: AvailableResource[key].name,
+      limit: AvailableResource[key].limit,
+      value: AvailableResource[key].getValue(),
+    };
+  });
+  return result;
+}
 
 function resources() {
   const set = new Set(['cpu', 'mem', 'load', 'power', 'network', 'disk']);

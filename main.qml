@@ -1,14 +1,14 @@
-import QtQuick 2.0
-import QtQuick.Controls 1.4
-import QtQuick.Window 2.0
-import Qt.labs.settings 1.1
+import QtQuick
+import QtQuick.Controls
+import QtQuick.Window
+import QtCore
 
 import "main.js" as Main
 
 ApplicationWindow {
 	id: root
 	visible: true
-    width: row.width
+    width: Math.max(row.width, 1)
 	height: 40
 	x: Screen.width - width
 	y: Screen.height - height
@@ -71,18 +71,8 @@ ApplicationWindow {
 
     MouseArea {
 		anchors.fill: parent
-		property int mx: 0
-		property int my: 0
 		onPressed: {
-			mx = mouseX
-			my = mouseY
-		}
-		onPositionChanged: {
-			root.x += mouseX - mx
-			root.y += mouseY - my
-		}
-		onDoubleClicked: {
-			exec.system_monitor()
+			exec.startSystemMove(root)
 		}
 	}
 
